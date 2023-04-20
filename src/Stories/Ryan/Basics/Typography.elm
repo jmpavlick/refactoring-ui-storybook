@@ -1,4 +1,4 @@
-module Stories.Basics.Typography exposing (main)
+module Stories.Ryan.Basics.Typography exposing (main)
 
 import Html exposing (Html)
 import Ryan.Ui

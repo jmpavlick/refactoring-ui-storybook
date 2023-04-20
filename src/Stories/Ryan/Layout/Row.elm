@@ -1,4 +1,4 @@
-module Stories.Layout.Row exposing (main)
+module Stories.Ryan.Layout.Row exposing (main)
 
 import Html exposing (Html)
 import Ryan.Ui

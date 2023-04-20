@@ -1,4 +1,4 @@
-module Stories.Button.Primary exposing (main)
+module Stories.Ryan.Button.Secondary exposing (main)
 
 import Html exposing (Html)
 import Ryan.Ui.Button
@@ -13,11 +13,12 @@ main =
 
 
 type Msg
-    = UserClickedSignUp
+    = UserClickedCancel
 
 
 view : Html Msg
 view =
-    Ryan.Ui.Button.new { label = "Sign up" }
-        |> Ryan.Ui.Button.onClick UserClickedSignUp
+    Ryan.Ui.Button.new { label = "Cancel" }
+        |> Ryan.Ui.Button.withSecondaryStyle
+        |> Ryan.Ui.Button.onClick UserClickedCancel
         |> Ryan.Ui.Button.view

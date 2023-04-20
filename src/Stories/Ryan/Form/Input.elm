@@ -1,4 +1,4 @@
-module Stories.Form.Input exposing (main)
+module Stories.Ryan.Form.Input exposing (main)
 
 import Html exposing (Html)
 import Ryan.Ui.Button

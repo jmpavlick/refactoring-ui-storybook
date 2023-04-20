@@ -1,4 +1,4 @@
-module Stories.Button.Danger exposing (main)
+module Stories.Ryan.Button.Disabled exposing (main)
 
 import Html exposing (Html)
 import Ryan.Ui.Button
@@ -13,12 +13,12 @@ main =
 
 
 type Msg
-    = UserClickedDeleteAccount
+    = UserClickedSignUp
 
 
 view : Html Msg
 view =
-    Ryan.Ui.Button.new { label = "Delete account" }
-        |> Ryan.Ui.Button.withDangerStyle
-        |> Ryan.Ui.Button.onClick UserClickedDeleteAccount
+    Ryan.Ui.Button.new { label = "Sign up" }
+        |> Ryan.Ui.Button.onClick UserClickedSignUp
+        |> Ryan.Ui.Button.withDisabledIf True
         |> Ryan.Ui.Button.view
