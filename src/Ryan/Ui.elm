@@ -1,4 +1,4 @@
-module Ui exposing
+module Ryan.Ui exposing
     ( Html
     , none, text
     , row, col

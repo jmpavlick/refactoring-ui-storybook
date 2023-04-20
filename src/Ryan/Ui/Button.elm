@@ -1,4 +1,4 @@
-module Ui.Button exposing
+module Ryan.Ui.Button exposing
     ( Settings, new
     , withSecondaryStyle, withDangerStyle
     , withDisabledIf

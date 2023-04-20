@@ -1,8 +1,8 @@
 module Stories.Layout.Column exposing (main)
 
 import Html exposing (Html)
+import Ryan.Ui
 import Storybook.Story exposing (Story)
-import Ui
 
 
 main : Story () msg
@@ -14,13 +14,13 @@ main =
 
 view : Html msg
 view =
-    Ui.col [ Ui.pad.px25, Ui.gap.px25, Ui.bg.blue800 ]
-        [ square [ Ui.bg.red400 ]
-        , square [ Ui.bg.blue400 ]
-        , square [ Ui.bg.green400 ]
+    Ryan.Ui.col [ Ryan.Ui.pad.px25, Ryan.Ui.gap.px25, Ryan.Ui.bg.blue800 ]
+        [ square [ Ryan.Ui.bg.red400 ]
+        , square [ Ryan.Ui.bg.blue400 ]
+        , square [ Ryan.Ui.bg.green400 ]
         ]
 
 
 square : List (Html.Attribute msg) -> Html msg
 square attrs =
-    Ui.row (Ui.width.px50 :: Ui.height.px50 :: attrs) []
+    Ryan.Ui.row (Ryan.Ui.width.px50 :: Ryan.Ui.height.px50 :: attrs) []

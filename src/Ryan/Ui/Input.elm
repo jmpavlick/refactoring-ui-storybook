@@ -1,4 +1,4 @@
-module Ui.Input exposing
+module Ryan.Ui.Input exposing
     ( Settings, new
     , withLabelAbove
     , view
@@ -15,7 +15,7 @@ module Ui.Input exposing
 import Html exposing (Html)
 import Html.Attributes
 import Html.Events
-import Ui
+import Ryan.Ui
 
 
 
@@ -70,8 +70,8 @@ view (Settings internals) =
     in
     if internals.hasLabelAbove then
         Html.label []
-            [ Ui.col [ Ui.gap.px5 ]
-                [ Ui.text internals.label
+            [ Ryan.Ui.col [ Ryan.Ui.gap.px5 ]
+                [ Ryan.Ui.text internals.label
                 , viewInput
                 ]
             ]

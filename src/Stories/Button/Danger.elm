@@ -1,8 +1,8 @@
 module Stories.Button.Danger exposing (main)
 
 import Html exposing (Html)
+import Ryan.Ui.Button
 import Storybook.Story exposing (Story)
-import Ui.Button
 
 
 main : Story () Msg
@@ -18,7 +18,7 @@ type Msg
 
 view : Html Msg
 view =
-    Ui.Button.new { label = "Delete account" }
-        |> Ui.Button.withDangerStyle
-        |> Ui.Button.onClick UserClickedDeleteAccount
-        |> Ui.Button.view
+    Ryan.Ui.Button.new { label = "Delete account" }
+        |> Ryan.Ui.Button.withDangerStyle
+        |> Ryan.Ui.Button.onClick UserClickedDeleteAccount
+        |> Ryan.Ui.Button.view

@@ -1,9 +1,9 @@
 module Stories.Form.Input exposing (main)
 
 import Html exposing (Html)
+import Ryan.Ui.Button
+import Ryan.Ui.Input
 import Storybook.Story exposing (Story)
-import Ui.Button
-import Ui.Input
 
 
 main : Story Model Msg
@@ -51,10 +51,10 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Ui.Input.new
+    Ryan.Ui.Input.new
         { label = "Name"
         , value = model.value
         , onChange = UserChangedInput
         }
-        |> Ui.Input.withLabelAbove
-        |> Ui.Input.view
+        |> Ryan.Ui.Input.withLabelAbove
+        |> Ryan.Ui.Input.view

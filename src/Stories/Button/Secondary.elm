@@ -1,8 +1,8 @@
 module Stories.Button.Secondary exposing (main)
 
 import Html exposing (Html)
+import Ryan.Ui.Button
 import Storybook.Story exposing (Story)
-import Ui.Button
 
 
 main : Story () Msg
@@ -18,7 +18,7 @@ type Msg
 
 view : Html Msg
 view =
-    Ui.Button.new { label = "Cancel" }
-        |> Ui.Button.withSecondaryStyle
-        |> Ui.Button.onClick UserClickedCancel
-        |> Ui.Button.view
+    Ryan.Ui.Button.new { label = "Cancel" }
+        |> Ryan.Ui.Button.withSecondaryStyle
+        |> Ryan.Ui.Button.onClick UserClickedCancel
+        |> Ryan.Ui.Button.view

@@ -1,8 +1,8 @@
 module Stories.Button.Primary exposing (main)
 
 import Html exposing (Html)
+import Ryan.Ui.Button
 import Storybook.Story exposing (Story)
-import Ui.Button
 
 
 main : Story () Msg
@@ -18,6 +18,6 @@ type Msg
 
 view : Html Msg
 view =
-    Ui.Button.new { label = "Sign up" }
-        |> Ui.Button.onClick UserClickedSignUp
-        |> Ui.Button.view
+    Ryan.Ui.Button.new { label = "Sign up" }
+        |> Ryan.Ui.Button.onClick UserClickedSignUp
+        |> Ryan.Ui.Button.view
